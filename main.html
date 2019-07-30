@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+	background-color:white;
+}
+
+h1 {
+	font-family: verdana;
+	color: black;
+	text-align: center;
+}
+
+p {
+	font-family: verdana;
+	font-size: 25px;
+	color: black;
+}
+
+</style>
+</head>
+<body>
+<script>
+window.addEventListener('deviceorientation', handleOrientation);
+function handleOrientation(event){
+	var x = event.beta;
+	var y = event.gamma;
+	var z = event.alpha;
+	document.getElementById("data display1").innerHTML = "The x rotation is: " + x);
+	document.getElementById("data display2").innerHTML = "The y rotation is: " + y;
+	document.getElementById("data display3").innerHTML = "The z rotation is: " + z;
+}
+</script>
+<h1> Smart Home Hub </h1>
+<p id="data display1"></p>
+<p id="data display2"></p>
+<p id="data display3"></p>
+
+</html>
