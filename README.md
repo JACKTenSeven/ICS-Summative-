@@ -1,1 +1,1 @@
-Python program to bypass meross smart bulb app. Stole most of the code for the takeover from another meross bulb repository i forget which tho
+Python program to bypass meross smart bulb app. Credit for the code used to initially send code to the bulbs is from another meross bulb repo. 
